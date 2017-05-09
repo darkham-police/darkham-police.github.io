@@ -1,1 +1,53 @@
-<h1>darkham-police</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <!-- <base href="http://www.example.com/"> -->
+        <link rel="stylesheet" type="text/css" href="./main.css">
+    </head>
+    <body>
+        <div class="container">
+            <header></header>
+
+            <div id="home" class="content">
+                <h2>Recent reports:</h2>
+                <p>
+                    There is a new drug in town called Devil's Dust, stronger than Cocaine. It makes people charming, super-potent, and super-strong, but lets them go insane within weeks, sometimes on the first use.
+                </p>
+                <button class="to-cases-btn">Case Files</button>
+            </div>
+            
+            <div id="cases" class="content hidden">
+                <h2>Case Files:</h2>
+                <div class="report-img">
+                    <img src="./report.jpg"/>
+                </div>
+                <div class="case">
+                    <p>Nov 13th, 2011</p>
+                    <p>
+                        Chester Armstrong, President of the Longshore and Warehouse Union, Darkham section
+                        2 Harborstreet, Bureau of the Longshore and Warehouse Union, Darkham section
+                    </p>
+                    <p>Sex: M</p>
+                    <p>Race: B</p>
+                    <p>Situation Code: B = Single Victim / Multiple Offenders</p>
+                    <p>Victim Relationship: U = Unknown</p>
+                    <p>Weapon: 01 = Handgun, 03 = Shotgun</p>
+                    <p>Circumstances: G = Gangland, U = Unknown</p>
+                    <p>
+                        Notes: Probably two offenders. Entered building. Shot victim six times. Left with car. (Third    offender: driver)
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $('.to-cases-btn').on('click', () => {
+                $('#home').addClass('hidden');
+                $('#cases').removeClass('hidden');
+            });
+        </script>
+    </body>
+</html>
